@@ -4,21 +4,36 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-size: 12px;
 }
 
 @media (min-width: 0px) {
   main {
     display: grid;
+    position: relative;
     margin: 32px auto;
+    grid-gap: 32px;
   }
-  h1 {
+  h1, h2, h3 {
     margin: 16px 0;
     font-family: "Urbanist", serif;
-    font-size: 48px;
     font-weight: 700;
   }
-  p {
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    color: #041e42;
+    font-size: 3.25em;
+  }
+  h3 {
+    color: #041e42;
+    font-size: 2.75em;
+  }
+  p, li {
     font-family: "Open Sans", serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
 }
 
@@ -34,4 +49,9 @@ main {
 img.avatar {
   width: 100%;
   border-radius: 50% 50%;
+}
+#info {
+  position: sticky;
+  top: 32px;
+  height: auto;
 }
