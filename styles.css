@@ -1,0 +1,37 @@
+/* A. Dean Kelly Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 0px) {
+  main {
+    display: grid;
+    margin: 32px auto;
+  }
+  h1 {
+    margin: 16px 0;
+    font-family: "Urbanist", serif;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  p {
+    font-family: "Open Sans", serif;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 1280px;
+    grid-template-columns: 1fr 320px;
+  }
+}
+main {
+  display: grid;
+}
+img.avatar {
+  width: 100%;
+  border-radius: 50% 50%;
+}
