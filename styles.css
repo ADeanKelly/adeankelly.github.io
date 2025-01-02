@@ -66,8 +66,10 @@
     display: initial;
     position: sticky;
     top: 32px;
+    padding-left: 32px;
     height: min-content;
     grid-row: initial;
+    border-left: 2px #041e42 solid;
   }
 }
 

@@ -4,12 +4,18 @@
   <title>A. Dean Kelly</title>
   <link href='./styles.css' rel='stylesheet'>
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>❤️</text></svg>">
+  <!-- Meta Information -->
+   <meta name='description' content='Adverting Operations & Technology Professional'/>
+  <meta name='theme-color' content='#041e42'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.86'>
+  
+  <!-- Icon -->
+  <link rel='icon' href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>❤️</text></svg>'>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap' rel='stylesheet'>
 </head>
 <body>
   <main>
@@ -53,6 +59,23 @@
         This app connects to MLB Stats API to download and parse the upcoming schedule, and then uses an algorithm of my own design to adjust the estimated percentage a line item should deliver in a precise one hour period.
         In building my own version of the app, I was able to speed up the process nearly 10x by using NodeJS instead of Google AppScript and Google Sheets.
       </p>
+      <p>
+        <strong>Project GUIDRY: Business Intelligence & Analytics Dashboard</strong>
+      </p>
+      <p>In 2024, I designed an internally used business intelligence dashboard, the Grand Unified Insights Dashboard for Reporting Yield (GUIDRY).
+        This analytics dashboard gave my team focused insight into live campaigns and their current status at a glance.
+        With access to campain performance, we are able to identify campaigns that are failing from either a technical issue, where VAST errors exceed expected values, and from trafficking issues, where impressions goals are below expected levels.
+      </p>
+      <p>Building out the custom dashboard myself internall allowed for the construction of actually useful custom dimensions/metrics instead of using the pre-defined dimensions/metrics Google and others provide.
+        This included some of the following -
+      </p>
+      <p>
+        <ul>
+          <li><strong><i>Impressions per Break</i></strong>: A look at the number of impressions run in a typical MLB.TV commercial break. Critical in measuring the health of our client device implementations of Google DAI.</li>
+          <li><strong><i>Impressions per Stream</i></strong>: A breakdown of the number of impressions run in a users stream, broken down by Platform, Team, and/or Geography.</li>
+          <li><strong><i>Error Rate</i></strong>: A combination of all potential VAST errors produced by a tag in our streaming environment. Important to identify prematurely ended campaigns and media that fail to transcode.</li>
+        </ul>
+      </p>
       <!-- WORK EXPERIENCE -->
       <h3>Work Experience</h3>
       <p>
@@ -78,9 +101,6 @@
           <p>Andrew@adeankelly.com</p>
         </span> 
     </section>
-    
   </main>
-  
-  
 </body>
 </html>
