@@ -1,6 +1,5 @@
 /* A. Dean Kelly Styles */
 
-
 @media (min-width: 0px) {
   html, body {
     margin: 0;
@@ -27,7 +26,7 @@
     font-size: 4em;
   }
   h2 {
-    font-size: 3.25em;
+    font-size: 3em;
   }
   h3 {
     font-size: 2.75em;
@@ -40,13 +39,36 @@
   section#info {
     display: grid;
     position: relative;
+    padding-bottom: 32px;
     grid-row: 1;  
     grid-gap: 32px;
-    grid-template-columns: 1fr 2fr;
-  }
+    /* grid-template-columns: 1fr 2fr; */
+    /* border-bottom: 2px #041e42 solid; */
+  } 
   img.avatar {
-    width: 100%;
+    position: absolute;
+    top: 128px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 180px;
     border-radius: 50% 50%;
+    border: 4px solid #fff;
+    box-sizing: border-box;
+  }
+  img.background {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    /* grid-column: span 2; */
+    border-radius: 8px;
+  }
+  figure.info-grid {
+    margin: 0;
+    justify-content: center;
+  }
+  figure.info-grid h1, figure.info-grid p {
+    text-align: center;
   }
 }
 
@@ -54,22 +76,42 @@
   main {
     margin: 32px auto;
   }
+  h2 {
+    font-size: 3.25em;
+  }
 }
 
 @media (min-width: 1312px) {
   main {
+    display: grid;
     margin: 32px auto;
     max-width: 1280px;
-    grid-template-columns: 1fr 320px;
+    grid-template-columns: 320px 1fr;
   }
   section#info {
     display: initial;
-    position: sticky;
+    /* position: sticky; */
     top: 32px;
-    padding-left: 32px;
     height: min-content;
+    grid-column: span 2;
     grid-row: initial;
-    border-left: 2px #041e42 solid;
+  }
+  img.avatar {
+    position: absolute;
+    top: 160px;
+    left: 32px;
+    right: initial;
+    width: 240px;
+  }
+  img.background {
+    height: initial;
+  }
+
+  figure.info-grid {
+    margin: 32px 0;
+  }
+  figure.info-grid h1 {
+    margin: 0;
   }
 }
 
